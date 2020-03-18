@@ -6,17 +6,14 @@
 int main() {
 
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
-    char s[1000];
-    int count,key;
-    scanf("%s",s);
+    char s[100];
+    int count;
+    gets(s);
     for(int i=0;i<10;i++){
         count=0;
-        for(int j=0;j<s[i]!='\0';j++){
-            key=s[j]-'0';
-            if(key==i){
+        for(int j=0;j<s[j]!='\0';j++)
+            if(s[j]==i+'0')
                 count++;
-            }
-        }
         printf("%d ",count);
     }
     return 0;
